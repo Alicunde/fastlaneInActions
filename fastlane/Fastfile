@@ -42,7 +42,7 @@ platform :ios do
         type: match_type,
         keychain_name: ENV["CI_KEYCHAIN_NAME"],
         keychain_password: ENV["CI_KEYCHAIN_PASSWORD"],
-        readonly: true,
+        readonly: false,
         shallow_clone: true,
         verbose: false,
         clone_branch_directly: true,
@@ -50,7 +50,7 @@ platform :ios do
     else
       match(
         type: match_type,
-        readonly: true,
+        readonly: false,
         shallow_clone: true,
         verbose: false,
         clone_branch_directly: true,
