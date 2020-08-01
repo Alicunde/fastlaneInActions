@@ -101,7 +101,7 @@ platform :ios do
       verbose: false,
       uses_non_exempt_encryption: true,
       notify_external_testers: false,
-      username: options[:apple_id],
+      username: "salbatore@gmail.com",
       team_id: options[:apple_team_id],
       apple_id: options[:apple_app_id],
       itc_provider: ENV["sigh_#{options[:app_identifier]}_#{options[:match_type]}_team-id"],
